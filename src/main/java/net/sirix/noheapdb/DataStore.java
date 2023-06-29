@@ -1,4 +1,4 @@
-package com.alluretechnology.noheapdb;
+package net.sirix.noheapdb;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package com.alluretechnology.noheapdb;
+package net.sirix.noheapdb;
 
 import java.io.File;
 import java.io.RandomAccessFile;
@@ -8,9 +8,7 @@ import java.nio.channels.FileChannel;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * @author ebruno
- */
+
 public class FixedHash implements HashBase {
 
     public enum Storage {

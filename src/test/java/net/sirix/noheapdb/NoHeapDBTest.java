@@ -1,18 +1,14 @@
-package com.alluretechnology.noheapdb;
+package net.sirix.noheapdb;
 
-import com.alluretechnology.noheapdb.DataStore;
-import com.alluretechnology.noheapdb.NoHeapDB;
+import org.junit.Test;
 
-/**
- * @author ebruno
- */
 public class NoHeapDBTest {
     int stringRecordCount = 80_000;//2_000_000_000;//1_000_000_000;// 1_500_000_000;
     
     public static void main(String[] args) {
         NoHeapDBTest db = new NoHeapDBTest();
     }
-    
+
     public NoHeapDBTest() {
         int count = 1;
         
@@ -34,6 +30,7 @@ public class NoHeapDBTest {
         }
     }
 
+    @Test
     public void testStringsSave(NoHeapDB db, String storeName) {
         System.out.println("*** STRING PERSIST TEST ****\n");
 

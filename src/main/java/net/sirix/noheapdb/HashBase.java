@@ -1,8 +1,6 @@
-package com.alluretechnology.noheapdb;
+package net.sirix.noheapdb;
 
-/**
- * @author ebruno
- */
+
 public interface HashBase {
     public boolean put(String k, Integer s, Long o);
     public Long get(String k);

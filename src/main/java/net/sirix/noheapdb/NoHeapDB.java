@@ -1,12 +1,9 @@
-package com.alluretechnology.noheapdb;
+package net.sirix.noheapdb;
 
 import java.io.File;
 import java.util.HashMap;
 
-/**
- *
- * @author ebruno
- */
+
 public class NoHeapDB {
     protected final static int MEGABYTE  = 1024 * 1024;
     protected final static int DEFAULT_STORE_SIZE = MEGABYTE * 100;

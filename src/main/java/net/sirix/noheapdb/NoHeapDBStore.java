@@ -1,8 +1,7 @@
-package com.alluretechnology.noheapdb;
+package net.sirix.noheapdb;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.EOFException;
 import java.io.File;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -10,7 +9,6 @@ import java.io.ObjectOutputStream;
 import java.io.RandomAccessFile;
 import java.io.Serializable;
 import java.nio.ByteBuffer;
-import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1148,7 +1146,7 @@ public class NoHeapDBStore implements DataStore {
             // saved record
             //
             boolean found = false;
-            byte type = DataStore.EMPTY_RECORD_TYPE;
+            byte type = EMPTY_RECORD_TYPE;
             while ( !found && current < (totalSpace - Header.HEADER_SIZE)) {
                 // Begin reading the next record header
                 //
